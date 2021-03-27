@@ -23,11 +23,15 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 50px;
     font-weight: lighter;
     letter-spacing: .1rem;
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
 }
 
 .text-bio h5 {
     font-size: 25px;
     letter-spacing: .05rem;
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
 }
 
 .text-bio p {
@@ -35,6 +39,8 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: lighter;
     letter-spacing: .05em;
     padding: 5em, 0em;
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
 }
 
 a:visited {
@@ -48,3 +54,28 @@ a:link {
 a:hover {
     color: crimson;
 }
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
