@@ -1,0 +1,50 @@
+body {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.text-bio {
+    margin-top: 1%;
+    margin-left: 5%;
+    width: 50%;
+    float: left;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: black;
+    font-family: 'Anton', sans-serif;
+}
+
+.text-bio h1 {
+    font-size: 50px;
+    font-weight: lighter;
+    letter-spacing: .1rem;
+}
+
+.text-bio h5 {
+    font-size: 25px;
+    letter-spacing: .05rem;
+}
+
+.text-bio p {
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: .05em;
+    padding: 5em, 0em;
+}
+
+a:visited {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: crimson;
+}
