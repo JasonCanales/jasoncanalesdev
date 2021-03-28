@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    font-size: 17px;
+}
+
 body {
     background-color: white;
     height: 100vh;
@@ -13,6 +21,8 @@ body {
     margin-left: 5%;
     width: 50%;
     float: left;
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -21,27 +31,23 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .text-bio h1 {
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: lighter;
     letter-spacing: .1rem;
-    animation: fadeIn ease 3s;
-    -webkit-animation: fadeIn ease 3s;
+    margin-bottom: 1%;
 }
 
 .text-bio h5 {
-    font-size: 25px;
+    font-size: 2.2rem;
     letter-spacing: .05rem;
-    animation: fadeIn ease 3s;
-    -webkit-animation: fadeIn ease 3s;
+    margin-top: 1%;
 }
 
 .text-bio p {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: lighter;
     letter-spacing: .05em;
-    padding: 5em, 0em;
-    animation: fadeIn ease 3s;
-    -webkit-animation: fadeIn ease 3s;
+    padding: 5em, 0em
 }
 
 a:visited {
@@ -50,34 +56,47 @@ a:visited {
 
 a:link {
     text-decoration: none;
-    color: black;
+    color: black
 }
 
 a:hover {
     color: crimson;
 }
 
+@media screen and (min-width: 601px) {
+    div.example {
+      font-size: 80px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    div.example {
+      font-size: 30px;
+    }
+  }
+
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
-    }
+}
 
 @-moz-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
-    }
+}
     
-    @-webkit-keyframes fadeIn {
+@-webkit-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
-    }
+}
     
-    @-o-keyframes fadeIn {
+@-o-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
-    }
+}
     
-    @-ms-keyframes fadeIn {
+@-ms-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
-    }
+}
