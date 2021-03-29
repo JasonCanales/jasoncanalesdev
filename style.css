@@ -17,12 +17,29 @@ body {
 }
 
 .text-bio {
-    margin-top: 1%;
-    margin-left: 5%;
+    margin: 0px;
+    padding-top: 1%;
+    padding-left: 5%;
     width: 50%;
     float: left;
     animation: fadeIn ease 3s;
     -webkit-animation: fadeIn ease 3s
+}
+
+.front-image {
+    width: 50%;
+    height: 100%;
+    margin: 0px;
+    display: grid;
+    float: right;
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s
+}
+
+.front-image img {
+    position: relative;
+    max-height: 100vh;
+    max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, p {
